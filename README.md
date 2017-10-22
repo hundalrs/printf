@@ -1,4 +1,2 @@
-# printf
-# printf
-# printf
-# printf
+## C - printf project  
+
