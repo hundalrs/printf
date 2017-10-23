@@ -2,23 +2,36 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i;
+	int i, j;
 	va_list ap;
-	form_spec spec[] {
+	int sum = 0;
+	form_spec spec[] = {
 		{"c", print_c},
 		{"s", print_s},
-		{"%", print_%},
 		{"d", print_d},
 		{"i", print_i},
+		{"%", print_p},
 		{NULL, NULL}
 	};
 
 	va_start(ap, format);
-	i = 0;
+	i = 0, j = 0;
 	while (format && format[i])
 	{
-		if (format[i] == "%")
+		if (format[i] == '%')
 		{
-			while (spec[i].format)
-
+			while (spec[j].mod)
+			{
+				if (format[i + 1] == (*spec[j - 1].mod))
+				{
+					sum += spec[i].f(ap);
+					i += 2;
+				}
+			}
+		}
+		_putchar(format[i]);
+		j = 0, sum++, i++;
+	}
+	va_end(ap);
+	return (sum);
 }
