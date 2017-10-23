@@ -12,7 +12,12 @@ typedef struct form
 } form_spec;
 
 int _printf(const char *format, ...);
-int _putchar(char c);
 void print(int n);
+int _putchar(char);
+int print_c(va_list);
+int print_i(va_list);
+int print_s(va_list);
+int print_p(va_list);
+int print_d(va_list);
 
 #endif
