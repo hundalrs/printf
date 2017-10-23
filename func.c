@@ -71,8 +71,8 @@ int print_d(va_list ap)
  */
 
 /**
-int print_p(va_list ap)
-{
-	char = va_arg(ap, int);
-}
+ *int print_p(va_list ap)
+ *{
+ *	char = va_arg(ap, int);
+ *}
 */
