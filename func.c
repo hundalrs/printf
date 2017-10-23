@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * print_char - print character
+ * print_c - print character
  * @ap: argument to be printed
  * Return: number of character printed
  */
-int print_char(va_list ap)
+int print_c(va_list ap)
 {
 	char c = va_arg(ap, int);
 
@@ -15,11 +15,11 @@ int print_char(va_list ap)
 }
 
 /**
- * print_string - print character
+ * print_s - print character
  * @ap: argument to be printed
  * Return: number of character printed
  */
-int print_string(va_list ap)
+int print_s(va_list ap)
 {
 	char *s = va_arg(ap, char *);
 	int i = 0, sum = 0;
@@ -34,21 +34,31 @@ int print_string(va_list ap)
 }
 
 /**
- * print int - print interger
+ * print_i - print interger
  * @ap: argument to be printed
  * Return: number of interger printed
  */
-int print_int(va_list ap)
+int print_i(va_list ap)
 {
 	int n = va_arg(ap, int);
 }
 
 /**
- * print percentage - print percentage symbol
+ * print_d - print percentage symbol
+ * @ap: argument to be printed
+ * Return: number of interger printed
+ */
+int print_d(va_list ap)
+{
+	int n = va_arg(ap, int);
+}
+
+/**
+ * print_p - print percentage symbol
  * @ap: argument to be printed
  * Return: number of symbol printed
  */
-int print_per(va_list ap)
+int print_p(va_list ap)
 {
 	char = va_arg(ap, int);
 }
