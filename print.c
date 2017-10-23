@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 		{"s", print_s},
 		{"d", print_d},
 		{"i", print_i},
-		{"%", print_p},
+//		{"%", print_p},
 		{NULL, NULL}
 	};
 

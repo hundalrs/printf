@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-void print (int n)
+void helper_print_int (int n)
 {
 	if (n < 0) {
 		_putchar('-');
