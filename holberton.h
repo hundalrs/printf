@@ -4,6 +4,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
 
 typedef struct form
 {

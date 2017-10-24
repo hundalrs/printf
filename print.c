@@ -7,9 +7,8 @@
  */
 int _printf(const char *format, ...)
 {
-	int i, j;
+	int i = 0, j = 0, sum = 0;
 	va_list ap;
-	int sum = 0;
 	form_spec spec[] = {
 		{"c", print_c},
 		{"s", print_s},
@@ -22,22 +21,34 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 	va_start(ap, format);
-	i = 0, j = 0;
-	while (format && format[i])
+	while (format[i])
 	{
-		if (format[i] == '%')
+		j = 0;
+		if (format[i] != '%')
 		{
+			_putchar(format[i]);
+			i++, sum++;
+		}
+		else
+		{
+			if (format[i + 1] == '\0')
+				return (-1);
 			while (spec[j].mod)
 			{
 				if (format[i + 1] == (*spec[j].mod))
 				{
 					sum += spec[j].f(ap);
-					i += 2;
+					i+=2;
+					break;
 				}
 				j++;
 			}
+			if (spec[j].mod == NULL)
+			{
+				_putchar(format[i]), i++, sum++;
+				_putchar(format[i]), i++, sum++;
+			}
 		}
-		_putchar(format[i]), i++, j = 0; sum++;
 	}
 	va_end(ap);
 	return (sum);
