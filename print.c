@@ -13,12 +13,14 @@ int _printf(const char *format, ...)
 	form_spec spec[] = {
 		{"c", print_c},
 		{"s", print_s},
-		{"d", print_d},
+		{"d", print_i},
 		{"i", print_i},
-/*		{"%", print_p},       */
+		{"%", print_p},
 		{NULL, NULL}
 	};
 
+	if (format == NULL)
+		return (-1);
 	va_start(ap, format);
 	i = 0, j = 0;
 	while (format && format[i])
@@ -27,15 +29,15 @@ int _printf(const char *format, ...)
 		{
 			while (spec[j].mod)
 			{
-				if (format[i + 1] == (*spec[j - 1].mod))
+				if (format[i + 1] == (*spec[j].mod))
 				{
-					sum += spec[i].f(ap);
+					sum += spec[j].f(ap);
 					i += 2;
 				}
+				j++;
 			}
 		}
-		_putchar(format[i]);
-		j = 0, sum++, i++;
+		_putchar(format[i]), i++, j = 0; sum++;
 	}
 	va_end(ap);
 	return (sum);
