@@ -1,13 +1,19 @@
 ## C - printf project  
     
-_putchar.c -  print single charachter   
+### _putchar.c  
+A function Prints single charachter   
    
-func.c -  print strings and characters  
+### func.c  
+A function prints strings and characters  
   
-holberton.h -  header file  
+### holberton.h  
+Header file  
+   
+### int_printer.c  
+A function prints integers and numbers in decimal format  
   
-int_printer.c - prints integers and numbers in decimal format  
+### man_printf  
+printf man page   
   
-man_printf - man page   
-  
-print.c - identify and convert format specifiers  
+### print.c   
+A function identifies and converts format specifiers  
