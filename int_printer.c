@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+* helper_print_int - helps print int
+* Return: sum of length
+* @n: number
+*/
 int helper_print_int (int n)
 {
 	int sum = 0;

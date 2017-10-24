@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * _printf - main function to print
+ * Return: sum
+ * @format: format pointer string to print
+ */
 int _printf(const char *format, ...)
 {
 	int i, j;
