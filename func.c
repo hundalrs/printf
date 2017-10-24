@@ -9,8 +9,7 @@ int print_c(va_list ap)
 {
 	char c = va_arg(ap, int);
 
-	if (c != '\0')
-		_putchar(c);
+	_putchar(c);
 	return (1);
 }
 
