@@ -45,24 +45,9 @@ int print_i(va_list ap)
 {
 	int n = va_arg(ap, int);
 
-	helper_print_int (n);
-
-	return (1);
+	return (helper_print_int (n));
 }
 
-/**
- * print_d - print percentage symbol
- * @ap: argument to be printed
- * Return: number of interger printed
- */
-int print_d(va_list ap)
-{
-	int n = va_arg(ap, int);
-
-	helper_print_int (n);
-
-	return (1);
-}
 
 /**
  * print_p - print percentage symbol
@@ -70,9 +55,11 @@ int print_d(va_list ap)
  * Return: number of symbol printed
  */
 
-/**
-int print_p(va_list ap)
-{
-	char = va_arg(ap, int);
-}
-*/
+ int print_p(va_list ap)
+ {
+	 (void) ap;
+
+	 _putchar('%');
+
+	 return (1);
+ }
