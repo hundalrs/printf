@@ -55,12 +55,11 @@ int print_i(va_list ap)
  * Return: number of symbol printed
  */
 
- int print_p(va_list ap)
- {
+int print_p(va_list ap)
+{
 	 (void) ap;
 
 	 _putchar('%');
 
-	 return (1);
- }
-
+	return (1);
+}

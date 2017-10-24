@@ -21,12 +21,12 @@ int helper_print_int (int n)
 		n = -n;
 	}
 
-	if (n/10)
+	if (n / 10)
 	{
-		helper_print_int(n/10);
+		helper_print_int(n / 10);
 	}
 
-	_putchar(n%10 + '0');
+	_putchar(n % 10 + '0');
 	sum++;
 	return (sum);
 }

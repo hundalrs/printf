@@ -1,5 +1,7 @@
 #include "holberton.h"
 
+#include "holberton.h"
+
 /**
  * _printf - main function to print
  * Return: sum
@@ -17,7 +19,6 @@ int _printf(const char *format, ...)
 		{"%", print_p},
 		{NULL, NULL}
 	};
-
 	if (format == NULL)
 		return (-1);
 	va_start(ap, format);
@@ -25,10 +26,7 @@ int _printf(const char *format, ...)
 	{
 		j = 0;
 		if (format[i] != '%')
-		{
-			_putchar(format[i]);
-			i++, sum++;
-		}
+			_putchar(format[i]), i++, sum++;
 		else
 		{
 			if (format[i + 1] == '\0')
@@ -37,8 +35,7 @@ int _printf(const char *format, ...)
 			{
 				if (format[i + 1] == (*spec[j].mod))
 				{
-					sum += spec[j].f(ap);
-					i+=2;
+					sum += spec[j].f(ap), i += 2;
 					break;
 				}
 				j++;

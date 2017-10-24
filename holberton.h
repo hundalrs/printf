@@ -7,6 +7,11 @@
 #include <stdio.h>
 #include <limits.h>
 
+/**
+ * struct form - pointer to chars and function pointer
+ * @mod: pointer to char
+ * @f: function pointer
+ */
 typedef struct form
 {
 	char *mod;
