@@ -3,7 +3,7 @@
 /**
  * print_c - print character
  * @ap: argument to be printed
- * Return: number of character printed
+ * Return: 1
  */
 int print_c(va_list ap)
 {
@@ -51,14 +51,12 @@ int print_i(va_list ap)
 /**
  * print_p - print percentage symbol
  * @ap: argument to be printed
- * Return: number of symbol printed
+ * Return: 1
  */
-
 int print_p(va_list ap)
 {
 	 (void) ap;
 
 	 _putchar('%');
-
 	return (1);
 }
