@@ -15,26 +15,21 @@ The prototype of the printf funcaiton is:
 int printf(const char *format, ...);
 ```
 To print a regular string without any argument, you would write:         
-```c
-_printf("Hello, world.");
+```_printf("Hello, world.");
 ```
    
 To print a string with integer, you would use %d or %i specifier and write:   
-```c
-_printf("This is a number: %d", 34);
+```_printf("This is a number: %d", 34);
 ```   
-```c
-_printf("This is a number: %i", 34);
+```_printf("This is a number: %i", 34);
 ```      
    
 To print a string with char, you would use %c specifer and write:   
-```
-_printf("This is a letter: %c", 'A');
+```_printf("This is a letter: %c", 'A');
 ```   
     
 To print a string with array of char, you would use %s specifer and write:  
-```
-_printf("Hello %s.", "world");
+```_printf("Hello %s.", "world");
 ```    
    
 There is no limit on how many arguments to include in a string, but the arguments must correspond with the conversion specifiers.        
@@ -42,8 +37,13 @@ There is no limit on how many arguments to include in a string, but the argument
 ## List of files  
    
 **_putchar.c:** A function prints single charachter   
+  
 **func.c:** A function prints strings and characters  
+   
 **holberton.h:** Header file  
+   
 **int_printer.c:** A function prints integers and numbers in decimal format  
+  
 **man_3_printf:** printf man page   
+   
 **print.c:** A function identifies and converts format specifiers  
