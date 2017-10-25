@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-#include "holberton.h"
-
 /**
  * _printf - main function to print
  * Return: sum
