@@ -1,16 +1,16 @@
-# C printf project     
+# C Project - printf     
     
 ## Introduction   
    
-Th printf project is to re-create our own printf simulates the original C printf function. In this functioin, format specifiers  %d, %i, %s, and %c are supported but not other specifiers as in the original printf.  
+Th printf project is to re-create our own printf simulates the original C printf function. In this function, format specifiers  %d, %i, %s, and %c are supported but not other specifiers as in the original printf.  
    
 ## Usage
    
-The function takes argumet and produces output according to the format specified, and returns the number of character printed. If the funcation fails, it returns -1.
+The function takes argument and produces output according to the format specified, and returns the number of character printed. If the function fails, it returns -1.
        
-Ordinary charachters (not %) are copied unchanged to the standard output. % is used as conversion specifier and can take argument.   
+Ordinary characters (not %) are copied unchanged to the standard output. % is used as conversion specifier and can take argument.   
      
-The prototype of the printf funcaiton is:   
+The prototype of the printf function is:   
 ```c
 int printf(const char *format, ...);
 ```
@@ -31,9 +31,9 @@ There is no limit on how many arguments to include in a string, but the argument
    
 ## List of files  
    
-**_putchar.c:** A function prints single charachter   
+**_putchar.c:** A function prints single character   
   
-**func.c:** A function prints strings and characters  
+**func.c:** A function prints strings and characters, and calls int_printer.c to print integers and numbers in decimal. It checks and prints '%' if it follows by another '%'.  
    
 **holberton.h:** Header file  
    
