@@ -6,12 +6,12 @@ _printf - print data with standard output
 .LP .br 
 int _printf(const char *format, ...); 
 .SH DESCRIPTION
-The function _printf() takes argumet and produces output according to the format specified, and returns the number of character printed.
+The function _printf() takes argument and produces output according to the format specified, and returns the number of character printed.
 .LP
 .br
 .B The format string
 .br
-The format string is a character string. Ordinary charachters (not %) are copied unchanged to the standard output. % is used as conversion specifier and can take argument. There is no limit on how many arguments to include in a string, but the arguments must correspond with the conversion specifiers.     
+The format string is a character string. Ordinary characters (not %) are copied unchanged to the standard output. % is used as conversion specifier and can take argument. There is no limit on how many arguments to include in a string, but the arguments must correspond with the conversion specifiers.     
 .LP
 .B %d - 
 take and print a number in decimal
@@ -27,6 +27,6 @@ take and print a string
 .LP
 .B Return value
 .br
-The funcation returns the number of characters printed as final output. If there is error and the printing fails, the function returns -1.
+The function returns the number of characters printed as final output. If there is error and the printing fails, the function returns -1.
 .SH AUTHOR
 Raman Hundal, Yunju Chen
